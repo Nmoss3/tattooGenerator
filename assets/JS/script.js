@@ -3,7 +3,7 @@ var ideaInput2El = document.querySelector("#mySearchField2")
 var ideaInput3El = document.querySelector("#mySearchField3");
 var tattooContainerEl = document.querySelector("#tattoos-container");
 var tattooSearchTerm = document.querySelector("#tattoo-search-term");
-
+var object_name = {"bgImage":"","minAge":"21","imgLogo":"https:\/\/store.dcwine.com\/winery\/wp-content\/uploads\/2019\/08\/Door-Peninsula-Winery-Logo.png","title":"Hi there.","copy":"\nJust making sure you're over [age]. By entering, you are promising to us that you are of legal drinking age. We trust you. You have an honest face.","btnYes":"I AGREE","btnNo":"","redirectOnFail":"","beforeContent":"","afterContent":"","successTitle":"Success!","successText":"You are now being redirected back to the site ...","failTitle":"Sorry!","failText":"You are not old enough to view the site ..."};
 var formSubmitHandler = function(event) {
     // prevent page from refreshing
     event.preventDefault();
