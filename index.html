@@ -15,7 +15,7 @@
     <h1>Tattoo Ideas</h1>
     <div class="idea-1">
       <form>
-        <input id="mySearchField1" name="search" placeholder="Idea #1.." type="text">
+        <input id="mySearchField1" name="search" placeholder="Search Pinterest" type="text">
       </form>
     </div>
 
@@ -23,19 +23,13 @@
 
     <div class="idea-2">
       <form>
-        <input id="mySearchField2" name="search" placeholder="Idea #2.." type="text">
+        <input id="mySearchField2" name="search" placeholder="Search Flickr" type="text">
       </form>
     </div>
 
-    <br>
 
-    <div class="idea-3">
-      <form>
-        <input id="mySearchField3" name="search" placeholder="Idea #3.." type="text">
-      </form>
-    </div>
-
-    <button class="w3-button">SEARCH</button>
+    <button id="searchBtn" class="w3-button">SEARCH</button>
+    <button id="clearBtn" class="w3-button">CLEAR</button>
 
   </header>
   
@@ -45,7 +39,7 @@
 
     <div class="idea-1">
       <form>
-        <input id="mySearchField1" name="search" placeholder="Idea #1.." type="text">
+        <input id="mySearchField1" name="search" placeholder="Search Pinterest" type="text">
       </form>
     </div>
 
@@ -53,19 +47,12 @@
 
     <div class="idea-2">
       <form>
-        <input id="mySearchField2" name="search" placeholder="Idea #2.." type="text">
+        <input id="mySearchField2" name="search" placeholder="Search Flickr" type="text">
       </form>
     </div>
 
-    <br>
-
-    <div class="idea-3">
-      <form>
-        <input id="mySearchField3" name="search" placeholder="Idea #3.." type="text">
-      </form>
-    </div>
-
-    <button class="w3-button">SEARCH</button>
+    <button id="searchBtn" class="w3-button">SEARCH</button>
+    <button id="clearBtn" class="w3-button">CLEAR</button>
 
   </header>
     
@@ -90,11 +77,20 @@
       <div class="w3-third">
         <img src="https://via.placeholder.com/150" style="width:100%">
         <img src="https://via.placeholder.com/150" style="width:100%">
+      </div>
         
     <div class="w3-black w3-center w3-padding-20">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
       <p>Developed by: Marcia, Cole and Nicholas</p>
     </div>
-    
-<script src="/assets/JS/script.js"></script>
+
+
+    <script
+    type="text/javascript"
+    async defer
+    src="//assets.pinterest.com/js/pinit.js"
+></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./assets/JS/script.js"></script>
 </body>
 </html>
+<!--Created fixes to the html for easy searching-->
