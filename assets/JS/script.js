@@ -1,34 +1,20 @@
-var ideaInputEl = document.querySelector("#mySearchField1");
-var tattooContainerEl = document.querySelector("#tattoos-container");
-var tattooSearchTerm = document.querySelector("#tattoo-search-term");
-var searchButton = document.querySelector("#searchBtn");
-
-var formSubmitHandler = function (event) {
-  // prevent page from refreshing
-  event.preventDefault();
-
-  // get value from input element
-  var mySearchField1 = ideaInputEl.value.trim();
-
-  if (mySearchField1) {
-    getUserTattoos(mySearchField1);
-
-    // clear old content
-    tattooContainerEl.textContent = "";
-    ideaInputEl.value = "";
-  }
-};
+var ideaInputEl = $("#mySearchField1");
+var ideaInputE2 = $("#mySearchField2");
+var tattooContainerEl = $("#tattoos-container");
+//var tattooSearchTerm = document.querySelector("#tattoo-search-term");
+var searchButton = $("#searchFlickr");
+$(document).ready(function () {
+  searchButton.on("click", function () {
+    var searchTerm = ideaInputEl.val();
+    console.log(searchTerm);
+    getUserTattoos(searchTerm);
+  });
+});
 
 var getUserTattoos = function (user) {
   // format the Flickr api url
-  var apiurl, myresult, apiurl_size, selected_size;
-  apiurl =
+  var apiUrl =
     "https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=36cfa3d828dec55a60e1961894c998ed&per_page=10&format=json&nojsoncallback=1";
-  $(document).ready(function () {
-    $("#sq").click(function () {
-      selected_size = 150;
-    });
-  });
 
   // make a get request to url
   fetch(apiUrl)
@@ -59,6 +45,15 @@ var getFeaturedTattoos = function (language) {
     }
   });
 };
+
+var searchButton = $("#searchFlickr");
+$(document).ready(function () {
+  searchButton.on("click", function () {
+    var searchTerm = ideaInputE2.val();
+    console.log(searchTerm);
+    getUserTattoos(searchTerm);
+  });
+});
 
 var displayTattoos = function (tattoos, searchTerm) {
   // check if api returned any images
@@ -100,4 +95,3 @@ var displayTattoos = function (tattoos, searchTerm) {
 };
 
 // add event listeners to form and button container
-ideaInputEl.addEventListener("submit", formSubmitHandler);
