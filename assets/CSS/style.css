@@ -1,1 +1,16 @@
-
+.w3-third img {
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+  min-height: 300px;
+  overflow: hidden;
+}
+.w3-black {
+  clear: both;
+}
+.w3-third {
+  margin-bottom: 20px;
+}
+body {
+  background-color: black;
+}
