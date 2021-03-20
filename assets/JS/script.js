@@ -1,11 +1,9 @@
 var ideaInputEl = $("#mySearchField1");
 var ideaInputE2 = $("#mySearchField2");
 var tattooContainerEl = $("#tattoos-container");
-var searchFlickr = $("searchFlickr");
 var searchPixabay = $("#searchPixabay");
-//var tattooSearchTerm = document.querySelector("#tattoo-search-term");
 var searchButton = $("#searchFlickr");
-//t_url = "http://farm" + photo.farm + ".static.flickr.com/" + photo.server + "/" + photo.id + "_" + photo.secret + "_" + "t.jpg";
+
 $(document).ready(function () {
   searchButton.on("click", function () {
     var searchTerm = ideaInputEl.val();
