@@ -110,4 +110,3 @@ var getImages = function (searchTerm2) {
     }
   });
 };
-// hits[0].webformatURL
