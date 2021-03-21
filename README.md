@@ -1,34 +1,22 @@
 # tattooGenerator
 
 ## Purpose
+A tattoo idea generator website which pulls images from Flickr and Pixabay based on search field entry.
 
-Tattoos are a popular form of self-expression.
-
-Choosing body art that is meaningful to you takes
-
-time and brainstorming. A great source of visual
-
-inspiration is a photo sharing website like Flickr
-
-or Pixabay. By looking at images that interest you
-
-when the time comes to get inked you’ll have plenty of
-
-ideas to work with. Search for images from multiple
-
-websites in one place and find your next inkspiration
-
-that you’ll love for the rest of your life!
+[![Screen-Shot-2021-03-20-at-5-18-36-PM.png](https://i.postimg.cc/vZxGLr8k/Screen-Shot-2021-03-20-at-5-18-36-PM.png)](https://postimg.cc/5X1cfFCS)
 
 ## Built With
 
 - HTML
 - CSS
-- Bootstrap
+- W3.CSS
+- JavaScript
 - JQuery
 - AJAX
+- APIs
 
 ## Website
+https://nmoss3.github.io/tattooGenerator/  
 
 ## Contribution
 
